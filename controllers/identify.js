@@ -1,6 +1,6 @@
 const axios = require('axios');
-const subscriptionKey = 'f8b4e1b13704445fb0bf83d5d7aad3ee';
-const rootPath = 'https://nau-capstone-project-face-detection.cognitiveservices.azure.com/face/v1.0';
+const subscriptionKey = process.env.AZURE_KEY;
+const rootPath = process.env.AZURE_PATH;
 const defaultHeader = {
   'Ocp-Apim-Subscription-Key': subscriptionKey
 }
